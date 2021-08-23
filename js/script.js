@@ -107,7 +107,7 @@ function timer(num, coun) {
     //window+document+footer.height and scroll heigtht
 
 function showByScroll() {
-    if (window.pageYOffset + document.documentElement.clientHeight + 100 >= document.documentElement.scrollHeight) {counters.forEach(item => timer(parseFloat(item.getAttribute('data-max')), item ));
+    if (window.pageYOffset + document.documentElement.clientHeight>= document.documentElement.scrollHeight) {counters.forEach(item => timer(parseFloat(item.getAttribute('data-max')), item ));
 
     }
 }
