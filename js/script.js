@@ -9,14 +9,18 @@ const olerlay = document.querySelector('.menu__overlay');
 
 hamburger.addEventListener('click',() => {
     menu.classList.add('active')
-    hamburger.classList.add('hamburger_active')
-    olerlay.classList.add('menu__overlay_active')
+    hamburger.classList.add('hamburger_active');
+    olerlay.classList.add('menu__overlay_active');
+        document.body.style.overflow = "hidden";
+
 
 });
 closeElem.addEventListener('click',() => {
     menu.classList.remove('active')
-    hamburger.classList.remove('hamburger_active')
-    olerlay.classList.remove('menu__overlay_active')
+    hamburger.classList.remove('hamburger_active');
+    olerlay.classList.remove('menu__overlay_active');
+        document.body.style.overflow = "";
+
 });
 //log in  
 const logIn = document.querySelector('.login');
@@ -24,12 +28,16 @@ const formLogin = document.querySelector('.form__login');
 const closeElemLog = document.querySelector('.menu__close_login');
 
 logIn.addEventListener('click', ()=>{
-    formLogin.classList.add('form__login_active')
-    olerlay.classList.add('menu__overlay_active')
+    formLogin.classList.add('form__login_active');
+    olerlay.classList.add('menu__overlay_active');
+        document.body.style.overflow = "hidden";
+
 });
 closeElemLog.addEventListener('click',() => {
-    formLogin.classList.remove('form__login_active')
-    olerlay.classList.remove('menu__overlay_active')
+    formLogin.classList.remove('form__login_active');
+    olerlay.classList.remove('menu__overlay_active');
+        document.body.style.overflow = "";
+
 });
 //sign in
 const sign = document.querySelector('.sign');
@@ -37,12 +45,16 @@ const formSign = document.querySelector('.form__sign');
 const closeElemSign = document.querySelector('.menu__close_sign');
 
 sign.addEventListener('click', ()=>{
-    formSign.classList.add('form__sign_active')
-    olerlay.classList.add('menu__overlay_active')
+    formSign.classList.add('form__sign_active');
+    olerlay.classList.add('menu__overlay_active');
+        document.body.style.overflow = "hidden";
+
 });
 closeElemSign.addEventListener('click',() => {
-    formSign.classList.remove('form__sign_active')
-    olerlay.classList.remove('menu__overlay_active')
+    formSign.classList.remove('form__sign_active');
+    olerlay.classList.remove('menu__overlay_active');
+        document.body.style.overflow = "";
+
 });
 
 
