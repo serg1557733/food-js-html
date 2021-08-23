@@ -104,13 +104,16 @@ function timer(num, coun) {
  
 
 //scroll eventlistener
+    //window+document+footer.height and scroll heigtht
 
 function showByScroll() {
-    if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {counters.forEach(item => timer(parseFloat(item.getAttribute('data-max')), item ));
+    if (window.pageYOffset + document.documentElement.clientHeight + 100 >= document.documentElement.scrollHeight) {counters.forEach(item => timer(parseFloat(item.getAttribute('data-max')), item ));
 
     }
 }
 window.addEventListener('scroll', showByScroll);
-
+console.log(window.pageYOffset);
+//console.log(document.documentElement.clientHeight);
+console.log(document.documentElement.scrollHeight);
 
 });
